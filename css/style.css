@@ -236,7 +236,8 @@ span{
     margin: 0 auto; 
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 100px;
     padding-top: 20px;
     padding-bottom: 100px;
 }
@@ -311,5 +312,91 @@ span{
 .details-game{
     width: 450px;
     height: 450px;
-    background-color: #88DFF2;
+    border-radius: 50px 0 50px 0;
+}
+
+.details-card{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    text-align: center;
+    padding-bottom: 30px;
+    display: none;
+}
+
+.details-card > .card-logo{
+    margin-top: -40px;
+}
+
+.details-card div{
+    padding-left: 20px;
+}
+
+.card-one, .card-two{
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+.card-one, .card-two p{
+    text-align: justify;
+}
+
+#card-img img{
+    width: 450px;
+    height: 450px;
+    border: 3px solid var(--element2);
+    border-radius: 10px;
+}
+
+#card-cod{
+    border: 3px solid #fbff00;
+    border-radius: 10px;
+}
+
+#card-cod img{
+    margin-bottom: 4px;
+}
+
+#card-cod span{
+    color: #fbff00;
+}
+
+#card-valorant{
+    border: 3px solid #E82F45;
+    border-radius: 10px;
+}
+
+#card-valorant span{
+    color: #E82F45;
+}
+
+#card-pubg{
+    border: 3px solid #bd6f00;
+    border-radius: 10px;
+}
+
+#card-pubg span{
+    color: #bd6f00;
+}
+
+#card-lol{
+    border: 3px solid #dfcd89;
+    border-radius: 10px;
+}
+
+#card-lol span{
+    color: #dfcd89;
+}
+
+#card-fifa{
+    border: 3px solid #72b0d5;
+    border-radius: 10px;
+}
+
+#card-fifa span{
+    color: #72b0d5;
+}
+
+.active{
+    display: block;
 }

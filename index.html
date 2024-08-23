@@ -112,15 +112,15 @@
     
                     <div class="details-js">
                         <div class="card">
-                            <img src="img/cards/img-cod.png" alt="Call Of Duty Mobile" id="img-code">
+                            <img src="img/cards/img-cod.png" alt="Call Of Duty Mobile" class="img-cod">
                         
-                            <img src="img/cards/img-valorant.png" alt="Valorant" id="img-valorant">
+                            <img src="img/cards/img-valorant.png" alt="Valorant" class="img-valorant">
                        
-                            <img src="img/cards/img-pubg.png" alt="PUBG" id="img-pubg">
+                            <img src="img/cards/img-pubg.png" alt="PUBG" class="img-pubg">
                   
-                            <img src="img/cards/img-lol.png" alt="League Of Legends" id="img-lol">
+                            <img src="img/cards/img-lol.png" alt="League Of Legends" class="img-lol">
                         
-                            <img src="img/cards/img-fifa.png" alt="Fc 24" id="img-fifa">
+                            <img src="img/cards/img-fifa.png" alt="Fc 24" class="img-fifa">
                         </div>
 
                         
@@ -131,7 +131,104 @@
                 </div>
                     
                 <div class="details-game">
-                    
+                    <div class="details-card active" id="card-img"> 
+                        <img src="img/details/card.png" alt="">
+                    </div>
+                    <!-- COD -->
+                    <div class="details-card" id="card-cod">
+                        <img src="img/cards/logo-cod.png" alt="" class="card-logo">
+                        <div class="card-one">
+                            <p><span>Objetivo:</span> Dependendo do modo de jogo, 
+                                o objetivo pode ser eliminar o time 
+                                adversário ou capturar e manter 
+                                objetivos.</p>
+                            <p><span>Partidas:</span> Jogos geralmente ocorrem em 
+                                equipes de 5 a 6 jogadores.</p>
+                        </div>
+                        <div class="card-two">
+                            <p><span>Equipamento:</span> Todos os jogadores devem 
+                                usar as armas e equipamentos fornecidos 
+                                pelo jogo. Modificações são permitidas 
+                                conforme as regras do evento.</p>
+                            <p><span>Proibição:</span> Hacks, cheats e qualquer forma 
+                                de trapaça são estritamente proibidos.</p>
+                            <p><span>Limite de Tempo:</span> As partidas têm um limite 
+                                de tempo que varia conforme o modo de jogo.</p>
+                        </div>
+                    </div>
+
+                    <!-- Valorant -->
+                    <div class="details-card" id="card-valorant">
+                        <img src="img/cards/logo-valorant.png" alt="" class="card-logo">
+                        <div class="card-one">
+                            <p><span>Objetivo:</span> Em modos como "Desarmar a Bomba", 
+                                um time deve plantar uma bomba enquanto o outro 
+                                tenta impedir.</p>
+                            <p><span>Partidas:</span> As partidas são jogadas em equipes 
+                                de 5 jogadores.</p>
+                        </div>
+                        <div class="card-two">
+                            <p><span>Equipamento:</span> Apenas armas e habilidades 
+                                específicas dos agentes podem ser usadas.</p>
+                            <p><span>Proibição:</span> Hacks, cheats e trapaças são proibidos.</p>
+                            <p><span>Limite de Tempo:</span> Cada rodada tem um limite de tempo, 
+                                e o jogo completo pode ter um número fixo de rodadas.</p>
+                        </div>
+                    </div>
+
+                    <!-- PUBG -->
+                    <div class="details-card" id="card-pubg">
+                        <img src="img/cards/logo-pubg.png" alt="" class="card-logo">
+                        <div class="card-one">
+                            <p><span>Objetivo:</span> Ser o último jogador ou equipe 
+                                sobrevivente em um mapa que encolhe progressivamente.</p>
+                            <p><span>Partidas:</span> Jogadores podem competir individualmente, 
+                                em duplas ou em equipes de 4 jogadores.</p>
+                        </div>
+                        <div class="card-two">
+                            <p><span>Equipamento:</span> Os jogadores devem coletar armas e 
+                                equipamentos durante o jogo. Modificações de armas são permitidas.</p>
+                            <p><span>Proibição:</span>  Hacks e trapaças são proibidos.</p>
+                            <p><span>Limite de Tempo:</span> O jogo continua até que reste apenas 
+                                um jogador ou equipe, ou até que o tempo de jogo estabelecido termine.</p>
+                        </div>
+                    </div>
+
+                    <!-- PUBG -->
+                    <div class="details-card" id="card-lol">
+                        <img src="img/cards/logo-lol.png" alt="" class="card-logo">
+                        <div class="card-one">
+                            <p><span>Objetivo:</span> Destruir o Nexus inimigo, que está localizado 
+                                dentro da base adversária.</p>
+                            <p><span>Partidas:</span> Jogadores competem em equipes de 5 jogadores.</p>
+                        </div>
+                        <div class="card-two">
+                            <p><span>Equipamento:</span>  Apenas campeões e itens permitidos pelo jogo 
+                                podem ser usados. Modificações não são permitidas.</p>
+                            <p><span>Proibição:</span> Uso de cheats, hacks e comportamento antiético é proibido.</p>
+                            <p><span>Limite de Tempo:</span> As partidas não têm um limite de tempo fixo, mas 
+                                podem durar entre 20 e 60 minutos.</p>
+                        </div>
+                    </div>
+
+                    <!-- FIFA -->
+                    <div class="details-card" id="card-fifa">
+                        <img src="img/cards/logo-fifa.png" alt="" class="card-logo">
+                        <div class="card-one">
+                            <p><span>Objetivo:</span> Marcar mais gols que o adversário dentro 
+                                do tempo regulamentar.</p>
+                            <p><span>Partidas:</span> Jogos são disputados individualmente, com 
+                                um jogador controlando cada time.</p>
+                        </div>
+                        <div class="card-two">
+                            <p><span>Equipamento:</span> Apenas os controles e configurações 
+                                fornecidos pelo evento são permitidos.</p>
+                            <p><span>Proibição:</span> Cheats e trapaças são estritamente proibidos.</p>
+                            <p><span>Limite de Tempo:</span> As partidas têm uma duração padrão de 90 minutos, 
+                                divididos em dois tempos de 45 minutos cada.</p>
+                        </div>
+                    </div>
+
                 </div>
 
                 
