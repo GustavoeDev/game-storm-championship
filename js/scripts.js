@@ -16,7 +16,6 @@ cardToActivate.classList.add("active");
 const detailsJs = document.querySelector(".details-js");
 
 detailsJs.addEventListener("click", (event) => {
-        
     if (event.target.matches(".img-cod, .img-valorant, .img-pubg, .img-lol, .img-fifa")) {
         const imgClass = event.target.classList[0]; 
         const cardId = imgClass.replace('img-', 'card-'); 
@@ -27,7 +26,7 @@ detailsJs.addEventListener("click", (event) => {
     }
 });
 
-   
+// Clone dos Cards 
 const copy = document.querySelector(".card");
 const clone = copy.cloneNode(true);
 const details = document.querySelector(".details-js");

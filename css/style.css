@@ -295,7 +295,7 @@ span{
 
 .card{
     display: inline-block;
-    animation: 8s slide infinite linear;
+    animation: 10s slide infinite linear;
     cursor: pointer;
 }
 
@@ -351,6 +351,9 @@ span{
 #card-cod{
     border: 3px solid #fbff00;
     border-radius: 10px;
+    background-image: url(../img/cards/background-cod.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #card-cod img{
@@ -364,6 +367,9 @@ span{
 #card-valorant{
     border: 3px solid #E82F45;
     border-radius: 10px;
+    background-image: url(../img/cards/background-valorant.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #card-valorant span{
@@ -373,6 +379,9 @@ span{
 #card-pubg{
     border: 3px solid #bd6f00;
     border-radius: 10px;
+    background-image: url(../img/cards/background-pubg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #card-pubg span{
@@ -382,6 +391,9 @@ span{
 #card-lol{
     border: 3px solid #dfcd89;
     border-radius: 10px;
+    background-image: url(../img/cards/background-lol.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #card-lol span{
@@ -391,6 +403,9 @@ span{
 #card-fifa{
     border: 3px solid #72b0d5;
     border-radius: 10px;
+    background-image: url(../img/cards/background-fifa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #card-fifa span{
@@ -399,4 +414,15 @@ span{
 
 .active{
     display: block;
+}
+
+.container-resources {
+    background-color: var(--background);
+    width: 100vw; 
+    box-sizing: border-box; 
+}
+
+.resources-wrapper {
+    max-width: 1440px; 
+    margin: 0 auto; 
 }
