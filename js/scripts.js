@@ -2,26 +2,11 @@
 const detailsJs = document.querySelector(".details-js");
 const detailsCard = document.querySelectorAll(".details-card");
 const copy = document.querySelector(".card");
-const details = document.querySelector(".details-js");
 
 
 // Clone dos Cards 
 const clone = copy.cloneNode(true);
-details.appendChild(clone);
-
-
-// Função para mudar o card
-const activateCard = (cardToActivate) => {
-        
-const cardPadrao = document.querySelector("#card-img");
-cardPadrao.classList.remove("active");
-   
-detailsCard.forEach(card => {
-    card.classList.remove("active");
-});
-     
-cardToActivate.classList.add("active");
-};
+detailsJs.appendChild(clone);
 
 
 // Evento no carrossel
@@ -37,5 +22,16 @@ detailsJs.addEventListener("click", (event) => {
 });
 
 
-
+// Função para mudar o card
+const activateCard = (cardToActivate) => {
+        
+    const cardPadrao = document.querySelector("#card-img");
+    cardPadrao.classList.remove("active");
+       
+    detailsCard.forEach(card => {
+        card.classList.remove("active");
+    });
+         
+    cardToActivate.classList.add("active");
+    };
 
