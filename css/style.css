@@ -10,6 +10,8 @@
 
     --background: #0D040D;
     
+    
+
     --element1: #502E59;
     --element2: #0A8CBF;
     --element3: #6D0FF2;
@@ -29,8 +31,8 @@ body{
     font-size: 100%;
     font-family: var(--font-p);
     background-color: var(--background);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
 }
 
@@ -40,7 +42,9 @@ body{
     color: white;
 }
 
+
 /* HOME */
+
 
 .container-header{
     max-width: 1440px;
@@ -167,10 +171,12 @@ span{
 .blur{
     width: 100vw;
     height: 100px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--background));
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255,0), var(--background));
 }
 
+
 /* SOBRE O EVENTO */
+
 
 .container-main{
     background-color: #0D040D;
@@ -182,7 +188,7 @@ span{
     padding-top: 40px;
 }
 
-.main-text > h1{
+.main-text > h2{
     font-size: 2rem;
     margin-bottom: 10px;
     font-family: var(--font-title);
@@ -223,7 +229,9 @@ span{
     text-align: center;
 }
 
+
 /* DETALHES DOS JOGOS */
+
 
 .container-details {
     background-color: var(--background);
@@ -416,6 +424,10 @@ span{
     display: block;
 }
 
+
+/* CONTAINER DESTAQUES */
+
+
 .container-resources {
     background-color: var(--background);
     width: 100vw; 
@@ -425,4 +437,192 @@ span{
 .resources-wrapper {
     max-width: 1440px; 
     margin: 0 auto; 
+    text-align: center;
+    padding-top: 30px;
+}
+
+.resources-wrapper > h2{
+    font-family: var(--font-title);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.resources-wrapper > p{
+    font-size: 1.1rem;
+    margin-bottom: 60px;
+}
+
+.resources-text{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+.resources-pattern{
+    position: relative;
+    z-index: 1;
+    width: 320px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.resources-pattern::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, var(--element1), var(--element3));
+    filter: blur(4px); 
+    z-index: -1; 
+}
+
+.resources-pattern > h2{
+    margin-top: -57px;
+    font-size: 3rem;
+    color: var(--element2);
+    text-shadow: 0px 0px 13px black;
+}
+
+.resources-pattern > h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.resources-pattern > p{
+    text-align: center;
+}
+
+
+
+/* CONTAINER FORMULÁRIO*/
+
+.container-forms{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.container-forms > h2{
+    font-size: 2rem;
+    font-family: var(--font-title);
+    margin-bottom: 10px;
+}
+
+.container-forms > p{
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.container-forms > form{
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+
+.form-inputs > input{
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid var(--element3);
+    border-radius: 4px;
+}
+
+.form-inputs > input:focus{
+    outline: none;
+    box-shadow: none;
+    caret-color: var(--element3);
+    color: var(--element3);
+}
+
+form > p{
+    text-align: left;
+}
+
+.form-select-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0px;
+}
+
+.form-select-game > div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-btn{
+    width: 100%;
+    border: none;
+    background-color: var(--element3);
+    padding: 10px;
+    font-family: var(--font-p);
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-contato{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.form-contato i{
+    font-size: 40px;
+    color: var(--element3);
+}
+
+.form-contato h3{
+    margin-top: 3px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--element3);
+}
+
+.form-contato p{
+    margin-top: 7px;
+}
+
+footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 60px;
+    background-color: var(--element3);
+    align-items: center;
+}
+
+footer > p{
+    color: #000000;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+footer > span{
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.3rem;
 }

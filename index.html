@@ -56,7 +56,7 @@
 
         <section class="container-main" id="about">
             <div class="main-text">
-                <h1>SOBRE O <span>EVENTO</span></h1>
+                <h2>SOBRE O <span>EVENTO</span></h2>
                 <p>A GameStorm Championship reúne jogadores de todos 
                     os níveis em desafios intensos <br> e diversificados, 
                     oferecendo prêmios e uma experiência imersiva única.</p>
@@ -114,15 +114,15 @@
     
                     <div class="details-js">
                         <div class="card">
-                            <img src="img/cards/img-cod.png" alt="Call Of Duty Mobile" class="img-cod">
+                            <img src="img/cards/img-cod.png" alt="Call Of Duty Mobile" class="img-cod" data-card="card-cod">
                         
-                            <img src="img/cards/img-valorant.png" alt="Valorant" class="img-valorant">
+                            <img src="img/cards/img-valorant.png" alt="Valorant" class="img-valorant" data-card="card-valorant">
                        
-                            <img src="img/cards/img-pubg.png" alt="PUBG" class="img-pubg">
+                            <img src="img/cards/img-pubg.png" alt="PUBG" class="img-pubg" data-card="card-pubg">
                   
-                            <img src="img/cards/img-lol.png" alt="League Of Legends" class="img-lol">
+                            <img src="img/cards/img-lol.png" alt="League Of Legends" class="img-lol" data-card="card-lol">
                         
-                            <img src="img/cards/img-fifa.png" alt="Fc 24" class="img-fifa">
+                            <img src="img/cards/img-fifa.png" alt="Fc 24" class="img-fifa" data-card="card-fifa">
                         </div>
 
                         
@@ -240,9 +240,125 @@
     
         <section class="container-resources">
             <div class="resources-wrapper">
-                <h1>GUSTAVO</h1>
+                
+                <h2>O QUE PODEMOS <span>OFERECER?</span></h2>
+                <p>Organizamos e oferecemos suporte para que você tenha uma
+                    ótima experiência!</p>
+
+                <div class="resources-text">
+                    <div class="resources-pattern">
+                        <h2>01</h2>
+                        <h3>Competição Intensa</h3>
+                        <p>Enfrente os melhores jogadores em uma série de jogos 
+                            desafiadores e prove suas habilidades em um ambiente 
+                            competitivo de alto nível.</p>
+                    </div>
+
+                    <div class="resources-pattern">
+                        <h2>02</h2>
+                        <h3>Premiações Atrativas</h3>
+                        <p>Conquiste prêmios em dinheiro, troféus e outros incentivos 
+                            para os melhores colocados, reconhecendo e recompensando o 
+                            talento e a dedicação.</p>
+                    </div>
+
+                    <div class="resources-pattern">
+                        <h2>03</h2>
+                        <h3>Diversidade de Jogos</h3>
+                        <p>Participe de uma ampla gama de jogos, de diferentes gêneros 
+                            e estilos, oferecendo algo para todos os gostos e permitindo 
+                            que você mostre suas habilidades em várias frentes.</p>
+                    </div>
+
+                    <div class="resources-pattern">
+                        <h2>04</h2>
+                        <h3>Oportunidades de Networking</h3>
+                        <p>Conecte-se com outros jogadores, desenvolvedores e profissionais 
+                            da indústria, ampliando suas redes e abrindo portas para futuras 
+                            colaborações e oportunidades.</p>
+                    </div>
+
+                    <div class="resources-pattern">
+                        <h2>05</h2>
+                        <h3>Experiência Imersiva</h3>
+                        <p>Desfrute de um evento bem organizado, com infraestrutura de qualidade, 
+                            tecnologia de ponta e um ambiente envolvente que realça a experiência 
+                            do jogo.</p>
+                    </div>
+
+                    <div class="resources-pattern">
+                        <h2>06</h2>
+                        <h3>Atividades e Entretenimento</h3>
+                        <p>Participe de atrações adicionais, como painéis, workshops, sorteios e 
+                            desafios paralelos, que proporcionam diversão extra além das competições 
+                            principais. </p>
+                    </div>
+                </div>
+
             </div>
         </section>
+        
+
+        <section class="container-forms">
+            <h2>ENVIAR <span>INSCRIÇÃO</span></h2>
+            <p>Quer participar do Game Storm Championship? Faça seu cadastro pelo formulário abaixo:</p>
+            
+            <form autocomplete="on">
+                <div class="form-inputs">
+                    <input type="text" name="name" id="iname" placeholder="Nome" required autocomplete="off">
+                    <input type="email" name="email" id="iemail" placeholder="E-mail" required autocomplete="email">
+                    <input type="text" name="user" id="iuser" placeholder="Usuário" required autocomplete="off">
+                    <input type="password" name="password" id="ipassword" placeholder="Senha" required autocomplete="off">
+                </div>
+                <p>Escolha seu jogo:</p>
+                <div class="form-select-game">
+                    <div>
+                        <input type="radio" id="icod" name="opc" value="cod">
+                        <label for="icod"><img src="img/cards/img-cod.png" alt=""></label>
+                    </div>
+                    <div>
+                        <input type="radio" id="ivalorant" name="opc" value="valorant">
+                        <label for="ivalorant"><img src="img/cards/img-valorant.png" alt=""></label>
+                    </div>
+                    <div>
+                        <input type="radio" id="ipubg" name="opc" value="pubg">
+                        <label for="ipubg"><img src="img/cards/img-pubg.png" alt=""></label>
+                    </div>
+                    <div>
+                        <input type="radio" id="ilol" name="opc" value="lol">
+                        <label for="ilol"><img src="img/cards/img-lol.png" alt=""></label>
+                    </div>
+                    <div>
+                        <input type="radio" id="ifc" name="opc" value="fc">
+                        <label for="ifc"><img src="img/cards/img-fifa.png" alt=""></label>
+                    </div>
+                </div>
+                <input type="submit" value="Enviar" class="form-btn">
+            </form>
+
+            <div class="form-contato">
+                <div>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <h3>Whatsapp</h3>
+                    <p>(84) 98155-7099</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <h3>E-mail</h3>
+                    <p>gustavoe.dev@gmail.com</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>@gustavox8_</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Game Storm Championship. Todos os Direitos Reservados</p>
+            <span>Gustavo Emanuel</span>
+        </footer>
 
     </main>
 
