@@ -45,14 +45,6 @@ body{
 
 /* HOME */
 
-
-.container-header{
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-}
-
 video{
     display: block;
     position: absolute;
@@ -66,12 +58,19 @@ video{
     z-index: -1;
 }
 
+.container-header{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
 .header{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px
+    padding: 20px 40px;
 }
 
 .img-logo{
@@ -81,6 +80,7 @@ video{
 .header ul{
     display: flex;
     gap: 40px;
+    margin-right: 25px;
 }
 
 .header li > a{
@@ -591,14 +591,12 @@ form > p{
 
 .form-contato i{
     font-size: 40px;
-    color: var(--element3);
 }
 
 .form-contato h3{
     margin-top: 3px;
     font-size: 1.6rem;
     font-weight: 600;
-    color: var(--element3);
 }
 
 .form-contato p{
@@ -606,22 +604,26 @@ form > p{
 }
 
 footer{
+    width: 100vw;
+    background-color: var(--element3);
+}
+
+footer .container-footer{
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 18px 60px;
-    background-color: var(--element3);
     align-items: center;
 }
 
-footer > p{
+footer .container-footer > p{
     color: #000000;
     font-weight: 600;
     font-size: 0.9rem;
 }
 
-footer > span{
+footer .container-footer > span{
     color: #000000;
     font-weight: 600;
     font-size: 1.3rem;
