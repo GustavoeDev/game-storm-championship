@@ -1,0 +1,49 @@
+#container-about-event {
+  text-align: center;
+  padding-top: 3.125rem;
+}
+
+#container-about-event .about-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+
+  margin-bottom: 4.375rem;
+}
+
+#container-about-event .about-title > h2 {
+  font-size: 2rem;
+}
+
+#container-about-event .about-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6.25rem;
+}
+
+#container-about-event .about-text > img {
+  width: 100%;
+  max-width: 18.75rem;
+}
+
+#container-about-event #about-text-owner {
+  flex-direction: row-reverse;
+}
+
+#container-about-event > h3 {
+  color: var(--blue-900);
+  font-size: 1.5rem;
+  margin: 3.125rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  #container-about-event .about-text,
+  #container-about-event #about-text-owner {
+    flex-direction: column;
+    gap: 3.125rem;
+  }
+  #container-about-event .about-text > img {
+    max-width: 13.75rem;
+  }
+}

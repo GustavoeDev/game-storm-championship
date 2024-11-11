@@ -1,0 +1,63 @@
+#container-offers {
+  text-align: center;
+
+  padding-top: 9.375rem;
+}
+
+#container-offers .offers-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+#container-offers .offers-title > h2 {
+  font-size: 2rem;
+}
+
+.offers-content {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1.875rem;
+  flex-wrap: wrap;
+}
+
+.offers-content > .offers-text {
+  position: relative;
+  z-index: 1;
+  max-width: 20rem;
+  width: 100%;
+  margin: 1.25rem 0;
+  padding: 1.25rem;
+}
+
+.offers-content > .offers-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--purple-900),
+    var(--purple-100)
+  );
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.offers-content > .offers-text > h2 {
+  margin: -3.125rem 0 1.25rem 0;
+  font-size: 3rem;
+  color: var(--blue-900);
+  text-shadow: 0px 0px 13px var(--black);
+}
+
+.offers-content > .offers-text > h3 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,174 @@
+#container-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 6.25rem;
+
+  padding-top: 9.375rem;
+}
+
+.details-text {
+  max-width: 31.25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.details-text > h1 {
+  font-size: 3rem;
+  margin-bottom: 0.625rem;
+}
+
+.details-icons {
+  display: flex;
+  gap: 1.25rem;
+  margin: 1.875rem 0;
+}
+
+.details-icons i {
+  margin-right: 0.625rem;
+}
+
+.details-js {
+  width: 100%;
+  margin-bottom: 0.938rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.details-js:hover .card {
+  animation-play-state: paused;
+}
+
+.card {
+  display: inline-block;
+  animation: 10s slide infinite linear;
+  cursor: pointer;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.card > img {
+  margin-right: 0.313rem;
+  border-radius: 8px;
+}
+
+#details-click {
+  font-size: 0.8rem;
+  color: var(--purple-100);
+}
+
+.details-game {
+  max-width: 28.125rem;
+  max-height: 28.125rem;
+  width: 100%;
+}
+
+.details-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  display: none;
+}
+
+.details-card > .card-logo {
+  margin-top: -2.5rem;
+}
+
+.details-card > img {
+  margin-bottom: 0.25rem;
+}
+
+.card-one,
+.card-two {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  justify-content: space-between;
+
+  margin: 0.625rem auto;
+  padding: 0 1.25rem;
+
+  text-align: justify;
+}
+
+#card-img {
+  border: 3px solid var(--blue-100);
+  border-radius: 8px;
+
+  background-image: url(../assets/details/bg-default.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#card-cod {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-image: url(../assets/details/bg-card/background-cod.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+}
+
+#card-valorant {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-image: url(../assets/details/bg-card/background-valorant.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card-pubg {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-image: url(../assets/details/bg-card/background-pubg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card-lol {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-image: url(../assets/details/bg-card/background-lol.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card-fifa {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-image: url(../assets/details/bg-card/background-fifa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (max-width: 950px) {
+  #container-details {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6.25rem;
+  }
+  #card-img {
+    width: 28.125rem;
+    height: 28.125rem;
+    width: 100%;
+  }
+}
